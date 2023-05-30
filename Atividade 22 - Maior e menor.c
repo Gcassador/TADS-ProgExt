@@ -13,8 +13,8 @@ int main() {
     {
         printf("%d: ", cont+1);
         scanf("%d",&valor[cont]);
-        maior = maior < valor[cont] || maior == 0 ? valor[cont] : maior;
-        menor = menor > valor[cont] || menor == 0 ? valor[cont] : menor;
+        maior = maior < valor[cont] || cont == 0 ? valor[cont] : maior;
+        menor = menor > valor[cont] || cont == 0 ? valor[cont] : menor;
     }
     
     printf("\nDos numero digitados, %d é o maior e %d é o menor\n", maior, menor);
